@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\LihatController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,6 +16,8 @@ use App\Http\Controllers\LihatController;
 Route::get('/', function () {
     return view('home');
 });
-Route::get('lihat', 'App\Http\Controllers\LihatController@lihatdata');
-Route::get('user', 'App\Http\Controllers\LihatController@lihatdata');
-Route::get('lihat/export_excel', 'App\Http\Controllers\LihatController@export');
+Route::get('/buku', function () {
+    return view('lihatsemua');
+});
+Route::get('/buku', 'App\Http\Controllers\MahasiswaController@index');
+Route::get('/buku/export_excel', 'App\Http\Controllers\MahasiswaController@export_excel');

@@ -11,7 +11,7 @@
 			<h4>Export Laporan Excel Pada Laravel</h4>
 		</center>
 		
-		<a href="/lihat/export_excel" class="btn btn-success my-3" target="_blank">EXPORT EXCEL</a>
+		<a href="/userlihat/export_excel" class="btn btn-success my-3" target="_blank">EXPORT EXCEL</a>
 		
 		<table class='table table-bordered'>
 			<thead>
@@ -28,7 +28,7 @@
 			<td>{{ $usr->id }}</td>
 			<td>{{ $usr->nama }}</td>
 			<td>{{ $usr->username }}</td>
-            <td>{{ $jbk->password }}</td>
+            <td>{{ $usr->password }}</td>
 		</tr>
 				@endforeach
 			</tbody>
