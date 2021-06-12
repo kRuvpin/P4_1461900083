@@ -23,7 +23,7 @@ class MahasiswaController extends Controller
             ->join('jenis_buku', 'rak_buku.id_jenis_buku', '=', 'jenis_buku.id')
             ->select('rak_buku.id', 'buku.judul', 'buku.tahun_terbit', 'jenis_buku.jenis')
             ->get();
-            return view('lihatsemua')->with('buku', $buku);
+            return view('0083lihatsemua')->with('buku', $buku);
     }
 
     /**
